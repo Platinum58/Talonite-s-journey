@@ -6,6 +6,61 @@
     <title>Document</title>
 </head>
 <body>
-    this is page2
+    <header>
+        <h1>Welcome to page 2</h1>
+        
+    </header>
+    <form action ="" method = "post">
+        <label for="username">username</lable>
+        <input type = "text" id="username" placeholder="sfdsj" required minlength="6" maxlength="15">
+
+        <label  for="password">password</lable>
+        <input type = "password" id="password" required><br>
+
+
+        <label  for="email">email</lable>
+        <input type="email" id="email" placeholder="sf@gmail.com"><br>
+
+        <label  for="phone">phone</lable>
+        <input type="tel" id="phone" placeholder="012-345-6789" patter = "[0-9]{3}-[0-9]{3}-[0-9]{3}"><br>
+
+        <label  for="bday">bday</lable>
+        <input type="date" id="bday"><br>
+
+        <label  for="quantity">quantity</lable>
+        <input type="number" id="quantity" min="0" max="99" value="1"><br>
+
+        <label for="title" >title</label>
+
+        <label for="Mr" >Mr</label>
+        <input type="radio" id="Mr" value="Mr" name="title">
+        
+        <label for="Ms" >Ms</label>
+        <input type="radio" id="Ms" value="Ms" name="title">
+
+        <label for="PHd" >Phd</label>
+        <input type="radio" id="PHd" value="PHd" name="title"><br>
+
+
+        <label for="payment" >payment</label>
+        <select id = "payment">
+            <option value="visa">visa</option>
+            <option value = "mastercard">mastercard</option>
+        </select><br>
+
+        <label for="subscribe">subscribe</label>
+        <input type="checkbox" id="subscribe"><br>
+        
+        <label for="comment">comment</label>
+        <textarea name="comment" rows="3" cols="25" ></textarea>
+
+        <label for="file">file</label>
+        <input type ="file" id="file" >
+        <input type="reset"><br>
+        <input type="submit">
+
+    </form>
+
+    <footer></footer>
 </body>
 </html>
