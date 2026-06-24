@@ -1,0 +1,31 @@
+class Solution {
+    public List<String> generateParenthesis(int n) {
+        List<String> list = new ArrayList<>();
+        String s = new String();
+        int open = 0, close = 0;
+        helper(list,open,close,n,s);
+        return list;
+
+    }
+    void helper(List<String> list, int o ,int c ,int n,String s){
+        
+        if(o == n && c == n){
+            list.add(s);
+            return;
+        }
+        
+        
+        if(o < n){
+            
+            
+            helper(list,o+1,c,n,s+"(");
+
+        }
+        if(c < o){
+            
+             helper(list,o,c+1,n,s+")");
+            
+        }
+        
+    }
+}
